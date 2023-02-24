@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="./loading.js"></script>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      .cardWrap > li {
+        height: 500px;
+        margin-bottom: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .cardWrap .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .cardWrap img {
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="cardWrap">
+      <li>
+        <div class="loading">Loading...</div>
+        <img data-src="./img/1.jpg" />
+      </li>
+      <li>
+        <div class="loading">Loading...</div>
+        <img data-src="./img/2.jpg" />
+      </li>
+      <li>
+        <div class="loading">Loading...</div>
+        <img data-src="./img/3.jpg" />
+      </li>
+      <li>
+        <div class="loading">Loading...</div>
+        <img data-src="./img/4.jpg" />
+      </li>
+    </ul>
+  </body>
+</html>
